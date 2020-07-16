@@ -24,10 +24,9 @@ namespace ScrabbleScore.Models
         return "Please input only letters";
       }
     }
-
-    // public static void ClearAll()
-    // {
-    //   Word.Clear();
-    // }
+  //   public static void ClearAll()
+  //   {
+  //     Word.Clear();
+  //   }
   }
 }
