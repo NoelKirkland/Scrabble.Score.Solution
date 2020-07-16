@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace ScrabbleScore.Models
 {
@@ -12,14 +13,21 @@ namespace ScrabbleScore.Models
       Word = word;
     }
 
-    public LettersOnly()
+    public string LettersOnly()
     {
+      if (Regex.IsMatch(Word, @"^[a-zA-Z]+$"))
+      {
+        return "This is a word!";
+      } 
+      else 
+      {
+        return "Please input only letters";
+      }
+    }
 
-    }
-    
-    public static void ClearAll()
-    {
-      Word.Clear();
-    }
+    // public static void ClearAll()
+    // {
+    //   Word.Clear();
+    // }
   }
 }

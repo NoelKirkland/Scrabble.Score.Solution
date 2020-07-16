@@ -6,12 +6,12 @@ using ScrabbleScore.Models;
 namespace ScrabbleScore.Tests
 {
   [TestClass]  
-  public class WordTests : IDisposable
+  public class WordTests // : IDisposable
   {
-    public void Dispose()
-    {
-      ScrabbleWord.ClearAll();
-    }
+    // public void Dispose()
+    // {
+    //   ScrabbleWord.ClearAll();
+    // }
 
   [TestMethod]
     public void WordConstructor_CreatesInstanceOfItem_Word()
@@ -24,7 +24,8 @@ namespace ScrabbleScore.Tests
     public void ScrabbleWord_ReturnErrorStatementIfInputContainsNotLetters_PleaseUseOnlyLetters()
     {
       ScrabbleWord newWord = new ScrabbleWord("tomato!");
-      checkedWord = newWord.LettersOnly();
+      // string checkedWord = newWord.LettersOnly();
+      string checkedWord = newWord.LettersOnly();
       Assert.AreEqual("Please input only letters", checkedWord);
     }
   }
