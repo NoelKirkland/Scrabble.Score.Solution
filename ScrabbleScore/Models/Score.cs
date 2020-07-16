@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace ScrabbleScore.Models
 {
-  public class ScrabbleScore{
+  public class ScrabbleScore
+  {
     
   }
 }
