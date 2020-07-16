@@ -11,5 +11,15 @@ namespace ScrabbleScore.Models
     {
       Word = word;
     }
+
+    public LettersOnly()
+    {
+
+    }
+    
+    public static void ClearAll()
+    {
+      Word.Clear();
+    }
   }
 }
